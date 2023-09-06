@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Odin Links and Images</title>
+    </head>
+
+    <body>
+        <h1>Homepage</h1>
+
+        <h2>Links</h2>
+        <ul>
+        
+            <li>
+                <!-- to create a link, we need an anchor element "a" -->
+                <a>click me</a>
+            </li>
+        
+
+            <li>
+                <!-- clicking on this anchor element doesn't have anywhere to go, so we need to give it a direction.
+                we can give it a destination by using the HTML attribute with "href" aka hypertext reference-->
+                <a href = "https://www.theodinproject.com/about">click me</a>
+            </li>
+
+            <li>
+                <!-- 
+                How to open links in a new tab:
+                - We need to add another attribute: "target"
+                
+                -target: specifies where the linked resource will be opened, 
+                "target" values: default is "_self", to open in a new window "_blank"
+
+                -while using (target:"_blank") it is important to also 
+                include attribute: (rel:"noopener noreferrer")
+
+
+                -the noopener value prevents the opened linked from gainiing access to the webpage from which it was opened
+                -the norefferer value prevents the opened linked from knowing which webpage or resource has a link to it
+                -basically prevents phishing attacks where the opened link may change the original webpage to a different one
+                to trick users
+
+                -->
+                <a href = "https://www.theodinproject.com/about" target = "_blank" rel="noopener noreferrer">click me</a>
+
+            </li>
+
+
+            <!-- absolute links are links to other pages on other websites: typically looks like (protocol://domain/path)-->
+
+            <!-- relative links are links to other pages on OUR website: relative links do not require the domain name since its
+            its another page on the same site.  -->
+            <!-- we can call a relative link like such -->
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <!--If we need to call from a subdirectory then we can just do: -->
+        <li>
+                <a href="pages/other.html">Other</a>
+        </li> 
+
+            <!-- It would be better to add (./) to the link to prevent issues. this would specify to look for
+            the file relative to the directory-->
+
+            <li>
+                <a href="./pages/other.html">Other</a>
+            </li>
+        </ul>
+
+        <h2>Images</h2>
+
+        <!-- image tag with the src attribute will provide an image
+        can be embedded with absolute or relative paths -->
+        <img src="https://www.theodinproject.com/mstile-310x310.png" >
+        
+        <!-- embedding images into the page directly from the root directory -->
+        <img src = "./images/dog.jpg" alt="random dog"/>
+        
+
+        <!-- to go back to parent directory (../path) -->
+
+
+        <!-- (alt) attribute in (img src)
+        helps to describte the image, when the image cannot be loaded-->
+        
+        <img src="https://www.theodinproject.com/mstile-310x310.png" alt="The Odin Project Logo"/>
+
+        
+    </body>
+</html>

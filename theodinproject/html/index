@@ -1,0 +1,49 @@
+<!-- Commentation can be done with CTRL + / -->
+
+<!DOCTYPE HTML> 
+<!--The DOCTYPE  is used to tell the browser what version of HTML it should use to render the document-->
+<!--This is a boilerplate. Can be done with "!" is VSstudio-->
+
+<html lang="en">
+<!--HTML element the "root" element. Every other element will be a descendent from this-->
+
+    <head>
+    <!--Head element is where the meta information is placed.
+    NO WEBPAGE CONTENT GOES HERE-->
+
+        <meta charset="UTF-8">
+        <!--This meta tag should be here for the charset encoding to make sure the webpage
+        display special symbols and characters from diff langauges correctly in browser-->
+        
+        <title>My First Webpage</title>
+        <!--Title is the Tab title-->
+    </head>
+
+    <body>
+        <!--The body is where the content goes
+        We can actually type directly into the body, but its not that great-->
+        <h1>This is a heading 1</h1>
+        <h2>This is a heading 2</h2>
+        <h3>This is a heading 3</h3>
+        <h4>This is a heading 4</h4>
+        <h5>This is a heading 5</h5>
+        <h6>This is a heading 6</h6>
+
+        <strong>This is a bold element</strong>
+        <!-- bold characters with this element -->
+
+        <em>This is the italics element</em>
+        <!-- This is the italics -->
+        
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod <strong>this can be bolded and <em>italicized </em>HERE</strong> incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. sadf lkjlaskdjflksaj lsak
+            djflkasjdf lskdjflaskj laskdjflaskdjflaskjdfl laskjdflaksdjf </p>
+         <!--Paragraphs are made like this -->
+
+         <p>t aliquip ex ea commodo consequat. sadf lkjlaskdjflksaj lsak
+            djflkasjdf lskdjflaskj laskdjflaskdjflaskjdfl laskjdflaksd so</p>
+        <!-- We can also nest paragraphs here like so -->
+    </body>
+</html>
